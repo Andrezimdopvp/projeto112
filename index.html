@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App web de gestos com as mãos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <center>
+            <h3 class="tn btn-warning heading">APP DE GESTOS COM AS MÃOS
+                <br>
+                <span>&#9994;</span>
+                <span>&#9996;</span>
+                <span>&#9995;</span>
+            </h3>
+
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Visualização da Webcam:</label>
+                <div id="camera"></div>
+                <br><br>
+                <button onclick="takeSnapshot();" class="btn btn-warning">Capturar Imagem</button>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Previsão 1: </label>
+                <p class="emotionName" id="resultEmotioname"></p>
+                <p class="emoji" id="updateEmoji"></p>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Foto:</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Prever Gestos com a mão</button>
+      </div>
+        </center>
+    </div>
+</body>
+</html>
