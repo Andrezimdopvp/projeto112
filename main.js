@@ -1,12 +1,4 @@
 
-function setup() {
-    canvas = createCanvas(640, 840);
-    canvas.position(110, 250);
-    video = createCapture(VIDEO);
-
-    tint_color = "";
-}
-
 
 Webcam.set({
     width:350,
@@ -42,7 +34,7 @@ Webcam.set({
 
   function gotResult(error, results) {
     if(error) {
-        console.error(error);
+        //console.error(error);
     } else{
       console.log(results);
 
